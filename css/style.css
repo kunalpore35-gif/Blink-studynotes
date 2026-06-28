@@ -603,3 +603,14 @@ footer .social-links a:hover { color: var(--neon-cyan); }
     background: rgba(255, 0, 255, 0.1);
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
     transf
+    .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    }
