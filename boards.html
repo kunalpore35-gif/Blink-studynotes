@@ -1,19 +1,90 @@
-<div class="exam-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boards - PYQ Platform</title>
 
-    <a class="exam-card" href="#">
-        <i class="fas fa-book"></i>
-        <h4>CBSE</h4>
-        <p>Coming Soon</p>
-    </a>
+    <!-- Font Awesome (icons কাজ করার জন্য) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <a class="exam-card" href="#">
-        <i class="fas fa-graduation-cap"></i>
-        <h4>WBCHSE</h4>
-        <p>Coming Soon</p>
-    </a>
+    <!-- তোমার CSS file -->
+    <link rel="stylesheet" href="css/style.css">
 
-</div>
-<div class="ad-placeholder">
-    <h3>🚀 Coming Soon</h3>
-    <p>CBSE and WBCHSE Chapter-wise Previous Year Questions will be available soon.</p>
-</div>
+    <style>
+        /* Safety fallback CSS (যদি external CSS না থাকে) */
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#f5f6fa;
+        }
+
+        .exam-grid{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap:20px;
+            padding:40px;
+        }
+
+        .exam-card{
+            background:white;
+            padding:20px;
+            text-align:center;
+            border-radius:12px;
+            text-decoration:none;
+            color:#333;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .exam-card:hover{
+            transform:translateY(-5px);
+        }
+
+        .exam-card i{
+            font-size:30px;
+            margin-bottom:10px;
+            color:#2c3e50;
+        }
+
+        .ad-placeholder{
+            margin:30px;
+            padding:20px;
+            text-align:center;
+            background:#fff;
+            border-radius:12px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align:center; margin-top:20px;">Select Your Board</h2>
+
+    <div class="exam-grid">
+
+        <a class="exam-card" href="#">
+            <i class="fas fa-book"></i>
+            <h4>CBSE</h4>
+            <p>Coming Soon</p>
+        </a>
+
+        <a class="exam-card" href="#">
+            <i class="fas fa-graduation-cap"></i>
+            <h4>WBCHSE</h4>
+            <p>Coming Soon</p>
+        </a>
+
+    </div>
+
+    <div class="ad-placeholder">
+        <h3>🚀 Coming Soon</h3>
+        <p>CBSE and WBCHSE Chapter-wise Previous Year Questions will be available soon.</p>
+    </div>
+
+    <!-- JS file (optional) -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
