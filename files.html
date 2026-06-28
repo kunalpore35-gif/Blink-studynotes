@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files - Blink</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="files">
+    <div class="bg-animation"></div>
+    <div class="grid-overlay"></div>
+    <div class="floating-particles" id="particles"></div>
+
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toast-msg">Download started!</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">BLINK</a>
+        <ul class="nav-links">
+            <li><a href="index.html" data-page="index.html">Home</a></li>
+            <li><a href="class11.html" data-page="class11.html">Class 11</a></li>
+            <li><a href="class12.html" data-page="class12.html">Class 12</a></li>
+            <li><a href="about.html" data-page="about.html">About</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Back Bar -->
+    <div class="top-back-bar">
+        <a class="top-back-btn" id="back-link" href="subjects.html">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <div class="breadcrumb-path">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a id="bc-class" href="class11.html">Class 11</a>
+            <span>/</span>
+            <a id="bc-subject" href="subjects.html">Physics</a>
+            <span>/</span>
+            <span class="current" id="bc-current">Notes</span>
+        </div>
+    </div>
+
+    <!-- FILES -->
+    <section class="section page-content">
+        <div class="section-title" id="files-title">Notes</div>
+
+        <div id="file-list-container">
+            <!-- Populated by main.js -->
+        </div>
+
+        <div class="ad-placeholder" style="margin-top: 40px;">
+            <i class="fas fa-ad"></i>
+            <p>Ad Space - Google AdSense Ready<br><small>Before Download Button (High CTR)</small></p>
+        </div>
+    </section>
+
+    <!-- Floating Back Button -->
+    <div class="back-switch visible">
+        <a class="back-btn-floating" id="back-link-float" href="subjects.html">
+            <i class="fas fa-arrow-left"></i>
+            <span class="back-label">Go Back</span>
+        </a>
+    </div>
+
+    <footer>
+        <p> Blink. All rights reserved. | Made with <i class="fas fa-heart" style="color: var(--neon-pink);"></i> for Students</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

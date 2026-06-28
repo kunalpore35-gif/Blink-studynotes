@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kunalpore35-gif.github.io/Blink.com/sitemap.xml
