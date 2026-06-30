@@ -563,6 +563,16 @@ const FILE_DATA = {
         url: 'https://drive.google.com/uc?export=download&id=1MHW_v3asdb7nOAUrC_kNF5w20xcvI1Gg',
     }
 ],
+'11-math-mind-map': [
+    {
+        name: 'Sets',
+        type: 'Image',
+        size: '1MB',
+        date: 'Jun 30, 2026',
+        icon: 'fa-image',
+        url: 'https://drive.google.com/uc?export=download&id=1ooKlsF2nsO1RGHBLJgscCR-QliHiAKLK'
+    },
+],
 
   
 };
